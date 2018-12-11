@@ -1,23 +1,30 @@
 import React from 'react'; 
 import ReactDOM from 'react-dom';
 
-export default class SearchBar extends React.Component {
+class SearchBar extends React.Component {
   constructor(props) {
     super(props)
-    this.state = ""
+    this.state = ''
+
+  
   }
 
 render() {
   return (
-    <div class="topnav">
-    <input type="text" placeholder="Search.."/>
+    <div className="topnav">
+    <input type="text" placeholder="Search..."/>
+    <button> Go </button>
    </div>
   )	
 }
 
+handleSearchSubmission(event){
+	
+}
 
 }
 
+export default SearchBar;
 
 
 

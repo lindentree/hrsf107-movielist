@@ -22,14 +22,14 @@ class MovieListApp extends React.Component {
 	render() {
 	  return (
 
-        <div >
+        <div>
           <Search />
           <ul>
-          {this.state.movies.map((movie, i) => (
-          	<li key = {i}>
-          	  <span className={movie.watched ? "watched" : ""}>{movie.title}</span>
-          	</li>
-          ))}
+            {this.state.movies.map((movie, i) => (
+          	  <li key = {i}>
+          	    <span className={movie.watched ? "watched" : ""}>{movie.title}</span>
+          	  </li>
+            ))}
           </ul>
         </div>
        )
